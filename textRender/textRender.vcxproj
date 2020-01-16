@@ -72,6 +72,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <IncludePath>D:\Project\Simple OpenGL Image Library\src;D:\Program Files %28x86%29\GLFW\include;D:\Project\glm;D:\Project\freetype-2.10.1\include;$(IncludePath)</IncludePath>
     <LibraryPath>D:\Program Files %28x86%29\GLFW\lib;D:\Project\freetype-2.10.1\objs\Win32\Debug;$(LibraryPath)</LibraryPath>
+    <ExecutablePath>$(ExecutablePath)</ExecutablePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>

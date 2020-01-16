@@ -31,9 +31,10 @@ Shader::Shader(const GLchar* vertexPath,
 	{
 		std::cout << "ERROR::SHADER::FILE_NOT_SUCCESFULLY_READ" << std::endl;
 	}
+
+	// 
 	const GLchar* vShaderCode = vertexCode.c_str();
 	const GLchar* fShaderCode = fragmentCode.c_str();
-
 
 	// 2. 编译着色器
 	GLuint vertex, fragment;
@@ -44,6 +45,7 @@ Shader::Shader(const GLchar* vertexPath,
 	vertex = glCreateShader(GL_VERTEX_SHADER);
 	glShaderSource(vertex, 1, &vShaderCode, NULL);
 	glCompileShader(vertex);
+
 	// 打印编译错误（如果有的话）
 	glGetShaderiv(vertex, GL_COMPILE_STATUS, &success);
 	if (!success)
@@ -56,6 +58,7 @@ Shader::Shader(const GLchar* vertexPath,
 	fragment = glCreateShader(GL_FRAGMENT_SHADER);
 	glShaderSource(fragment, 1, &fShaderCode, NULL);
 	glCompileShader(fragment);
+
 	// 打印编译错误（如果有的话）
 	glGetShaderiv(fragment, GL_COMPILE_STATUS, &success);
 	if (!success)

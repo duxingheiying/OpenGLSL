@@ -70,7 +70,7 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>D:\Project\OpenGLSL\Camera\glm;D:\Project\Simple OpenGL Image Library\src;D:\Program Files %28x86%29\GLFW\include;D:\Project\OpenGLSL\Transform;$(IncludePath)</IncludePath>
+    <IncludePath>D:\Project\glm;D:\Project\Simple OpenGL Image Library\src;D:\Program Files %28x86%29\GLFW\include;D:\Project\OpenGLSL\Transform;$(IncludePath)</IncludePath>
     <LibraryPath>D:\Project\Simple OpenGL Image Library\projects\VC9\Release;D:\Program Files %28x86%29\GLFW\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">

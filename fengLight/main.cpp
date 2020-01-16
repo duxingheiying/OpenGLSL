@@ -10,6 +10,7 @@
 
 // Other Libs
 #include <SOIL.h>
+
 // GLM Mathematics
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
@@ -18,7 +19,6 @@
 // Other includes
 #include "Shader.h"
 #include "Camera.h"
-
 
 // Function prototypes
 void key_callback(GLFWwindow* window, int key, int scancode, int action, int mode);
@@ -75,7 +75,6 @@ int main()
 
 	// OpenGL options
 	glEnable(GL_DEPTH_TEST);
-
 
 	// Build and compile our shader program
 	Shader lightingShader("lighting.vs", "lighting.frag");
@@ -169,6 +168,8 @@ int main()
 		// Clear the colorbuffer
 		glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+		//glEnable(GL_BLEND);
+		//glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
 		// Use cooresponding shader when setting uniforms/drawing objects
 		lightingShader.Use();
